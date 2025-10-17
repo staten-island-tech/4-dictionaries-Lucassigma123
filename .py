@@ -1,5 +1,5 @@
 cart=[]
-cost=[]
+cost=(0)
 item= {
     "name":"pistol",
     "price":"$500",
@@ -22,7 +22,7 @@ print(item)
 print(item1)
 print(item2)
 while True:
-    x= input("choose a gun to buy type no to stop buy")
+    x= input("choose a gun to buy type no to stop buy and checkout")
     if x== "pistol":
         print("you purchased item pistol ")
         cart.append("pistol")
@@ -37,6 +37,7 @@ while True:
                 cost+=5000
     if x=="no":
         print (cart)
+        print ("$" ,cost)
         break
 
 
