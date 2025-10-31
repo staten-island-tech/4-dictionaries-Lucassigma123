@@ -23,4 +23,6 @@ sigma=[
 
 
 while True:
+    for index, item in enumerate(sigma):
+        print(index, ":", sigma["name"], index,":", sigma["price"])
     x= input("choose a gun to buy type no to stop buy and checkout")
