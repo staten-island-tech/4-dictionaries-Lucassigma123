@@ -1,28 +1,38 @@
 cart=[]
 cost=0
-sigma=[
+items=[
     {
         "name":"pistol",
-        "price":"$500",
+        "price":500,
         "department":"GUNS",
         "description":"very cool pew pew"
     },
     {
         "name":"ak47",
-        "price":"$1000",
+        "price":1000,
         "department":"GUNS",
         "description":"Fast fire rate pew pew"
     },
     {
         "name":"rocket launcher",
-        "price":"$5000",
+        "price":5000,
         "department":"explosive",
         "description":"boom boom boom"
     }
 ]
 
-
+for index, item in enumerate(items):
+        print(index, ":", item["name"], index,":", item["price"])
 while True:
-    for index, item in enumerate(sigma):
-        print(index, ":", sigma["name"], index,":", sigma["price"])
-    x= input("choose a gun to buy type no to stop buy and checkout")
+        x=input("choose da items ")
+        y=items[int(x)]
+        print(f"you buy,{y["name"]}")
+        cart.append(y["name"])
+        cost+= y["price"]
+        z=input("type checkout to checkout yes to continue")
+        if z=="checkout".lower:
+                print(cart)
+                print(cost)
+
+       
+    
