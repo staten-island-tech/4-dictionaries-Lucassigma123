@@ -24,15 +24,16 @@ items=[
 for index, item in enumerate(items):
         print(index, ":", item["name"], index,":", item["price"])
 while True:
-        x=input("choose da items ")
+        x=input("choose da items type 3 to checkout")
+        if x==3:
+                print(cart)
+                print(cost)
+                break
         y=items[int(x)]
         print(f"you buy",{y["name"]})
         cart.append(y["name"])
         cost+= y["price"]
-        z=input("yes to checkout type anything else to continue")
-        if z.lower=="yes":
-                print(cart)
-                print(cost)
+        
 
        
     
