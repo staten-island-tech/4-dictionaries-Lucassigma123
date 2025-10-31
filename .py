@@ -26,11 +26,11 @@ for index, item in enumerate(items):
 while True:
         x=input("choose da items ")
         y=items[int(x)]
-        print(f"you buy,{y["name"]}")
+        print(f"you buy",{y["name"]})
         cart.append(y["name"])
         cost+= y["price"]
-        z=input("type checkout to checkout yes to continue")
-        if z=="checkout".lower:
+        z=input("yes to checkout type anything else to continue")
+        if z.lower=="yes":
                 print(cart)
                 print(cost)
 
