@@ -24,10 +24,10 @@ items=[
 for index, item in enumerate(items):
         print(index, ":", item["name"], index,":", item["price"])
 while True:
-        x=input("choose da items type 3 to checkout")
+        x=int(input("choose da items type 3 to checkout"))
         if x==3:
                 print(cart)
-                print(cost)
+                print("$",cost)
                 break
         y=items[int(x)]
         print(f"you buy",{y["name"]})
